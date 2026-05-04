@@ -1,70 +1,36 @@
 import 'package:flutter/material.dart';
+import 'theme/app_theme.dart';
+import 'screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  bool isDarkMode = false;
+
+  void toggleTheme() {
+    setState(() {
+      isDarkMode = !isDarkMode;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Pratico Portfolio',
+      title: 'Giuseppe Randazzo | Portfolio',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        scaffoldBackgroundColor: Colors.white,
-        fontFamily: 'Roboto',
-      ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.white,
-        elevation: 0,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            // Logo
-            const Text(
-              'Giuseppe ma per tutti Giupy',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 20,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
-
-            //Menu Centrale
-            Row(
-              children: [
-                Text(
-                  'Home',
-                  style: TextStyle(color: Colors.purpleAccent, fontSize: 16),
-                ),
-
-                const SizedBox(width: 24),
-                Text(
-                  'About',
-                  style: TextStyle(color: Colors.grey, fontSize: 16),
-                ),
-              ],
-            ),
-
-            //Icona di destra
-            const Icon(Icons.dark_mode_outlined, color: Colors.black),
-          ],
-        ),
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
+      home: HomePage(onToggleTheme: toggleTheme, isDarkMode: isDarkMode),
     );
   }
 }
