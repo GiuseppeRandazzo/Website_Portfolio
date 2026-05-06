@@ -8,6 +8,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    # Permessi necessari affinché il bot di GitHub possa caricare i file sul nuovo ramo gh-pages
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout Repository
