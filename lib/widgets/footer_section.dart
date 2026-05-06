@@ -22,21 +22,23 @@ class FooterSection extends StatelessWidget {
               const SizedBox(width: 16),
               IconButton(
                 icon: const Icon(Icons.work), // Simbolo LinkedIn
-                onPressed: () =>
-                    _launchURL('https://linkedin.com/in/tuo-profilo'),
+                onPressed: () => _launchURL(
+                  'https://www.linkedin.com/in/randazzo-giuseppe/',
+                ),
                 tooltip: 'LinkedIn',
               ),
               const SizedBox(width: 16),
               IconButton(
                 icon: const Icon(Icons.email),
-                onPressed: () => _launchURL('mailto:tua.email@example.com'),
+                onPressed: () =>
+                    _launchURL('mailto:giusepperandazzo1104@gmail.com'),
                 tooltip: 'Email',
               ),
             ],
           ),
           const SizedBox(height: 24),
           Text(
-            "© ${DateTime.now().year} Giuseppe Randazzo. Creato con Flutter 💙",
+            "© ${DateTime.now().year} Created by Giuseppe Randazzo.",
             style: const TextStyle(color: Colors.grey),
           ),
         ],

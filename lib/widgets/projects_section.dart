@@ -13,25 +13,18 @@ class ProjectsSection extends StatelessWidget {
     // Esempi di progetti fittizi (sostituiscili con i tuoi reali)
     final projects = [
       {
-        'title': 'Flutter E-Commerce',
+        'title': 'Il Teatro nella tua città',
         'description':
             'Applicazione completa per lo shopping online con carrello, pagamenti e gestione ordini.',
-        'tags': ['Flutter', 'Firebase', 'Stripe'],
-        'link': 'https://github.com/GiuseppeRandazzo',
+        'tags': ['Angular'],
+        'link': 'https://github.com/GiuseppeRandazzo/Il_teatro_nella_tua_citta',
       },
       {
-        'title': 'Dashboard Analytics',
+        'title': 'App Portfolio Personale',
         'description':
-            'Pannello di controllo web per la visualizzazione dei dati aziendali con grafici in tempo reale.',
-        'tags': ['Flutter Web', 'REST API', 'Charts'],
-        'link': 'https://github.com/GiuseppeRandazzo',
-      },
-      {
-        'title': 'Task Manager App',
-        'description':
-            'App per la produttività con gestione Kanban, promemoria e notifiche.',
-        'tags': ['Dart', 'Provider', 'SQLite'],
-        'link': 'https://github.com/GiuseppeRandazzo',
+            'Applicazione web per la visualizzazione del portfolio personale.',
+        'tags': ['HTML', 'CSS', 'JavaScript'],
+        'link': 'https://giusepperandazzo.github.io/App_Portofolio/',
       },
     ];
 
@@ -56,18 +49,24 @@ class ProjectsSection extends StatelessWidget {
             style: TextStyle(fontSize: 18, color: Colors.grey),
           ),
           const SizedBox(height: 48),
-          GridView.builder(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: isMobile ? 1 : 3,
-              crossAxisSpacing: 24,
-              mainAxisSpacing: 24,
-              childAspectRatio: isMobile ? 1.2 : 1.1,
-            ),
-            itemCount: projects.length,
-            itemBuilder: (context, index) {
-              return ProjectCard(project: projects[index], index: index);
+          LayoutBuilder(
+            builder: (context, constraints) {
+              // Calcola la larghezza delle card a seconda del dispositivo
+              double cardWidth = isMobile
+                  ? constraints.maxWidth
+                  : (constraints.maxWidth - 48) /
+                        3; // 48 è lo spacing tra le 3 card (2 spazi da 24)
+
+              return Wrap(
+                spacing: 24,
+                runSpacing: 24,
+                children: projects.asMap().entries.map((entry) {
+                  return SizedBox(
+                    width: cardWidth,
+                    child: ProjectCard(project: entry.value, index: entry.key),
+                  );
+                }).toList(),
+              );
             },
           ),
         ],
@@ -101,6 +100,8 @@ class ProjectCard extends StatelessWidget {
       padding: const EdgeInsets.all(24),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize
+            .min, // Fondamentale per far sì che occupi solo lo spazio necessario senza overflow
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -124,11 +125,9 @@ class ProjectCard extends StatelessWidget {
             style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
           ),
           const SizedBox(height: 12),
-          Expanded(
-            child: Text(
-              project['description']!,
-              style: const TextStyle(color: Colors.grey, height: 1.5),
-            ),
+          Text(
+            project['description']!,
+            style: const TextStyle(color: Colors.grey, height: 1.5),
           ),
           const SizedBox(height: 16),
           Wrap(

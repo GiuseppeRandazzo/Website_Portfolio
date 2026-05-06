@@ -86,7 +86,7 @@ class HeroSection extends StatelessWidget {
                     ).animate().fade(duration: 600.ms, delay: 200.ms).slideY(),
                     const SizedBox(height: 24),
                     Text(
-                      "Sviluppatore Mobile & Web appassionato di UI/UX, Flutter, e nuove tecnologie. Trasformo idee complesse in esperienze digitali eleganti e funzionali.",
+                      "Sono un Front-End Developer con un solido background nella comunicazione, nella dizione e nel public speaking.\nIl mio motto è:\nCodice che parla. Parola che connette.",
                       style: TextStyle(
                         fontSize: isMobile ? 16 : 20,
                         color: Colors.grey,

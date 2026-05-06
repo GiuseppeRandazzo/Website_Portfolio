@@ -10,14 +10,12 @@ class SkillsSection extends StatelessWidget {
     bool isMobile = Responsive.isMobile(context);
 
     final skills = [
-      'Flutter',
-      'Dart',
-      'Firebase',
-      'REST APIs',
+      'HTML/CSS',
+      'JavaScript',
       'Git & GitHub',
       'UI/UX Design',
-      'Provider/Riverpod',
-      'HTML/CSS',
+      'Next.js',
+      'PHP',
     ];
 
     return Container(
