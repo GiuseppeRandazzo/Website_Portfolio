@@ -1,74 +1,31 @@
-# 🚀 Giuseppe Randazzo | Junior Flutter Developer
+﻿# 🚀 Giuseppe Randazzo | Front-End Developer
 
 [![Flutter Web Deployment](https://github.com/GiuseppeRandazzo/pratico_portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/GiuseppeRandazzo/pratico_portfolio/actions)
 
 > **🌍 LIVE DEMO**: [Visita il mio Portfolio](https://GiuseppeRandazzo.github.io/pratico_portfolio/)
 
-Ciao! Sono un appassionato sviluppatore Junior orientato al mondo Mobile e Web. Questo portfolio rappresenta il mio percorso di apprendimento e la mia dedizione nel creare interfacce moderne, pulite e funzionali utilizzando **Flutter**.
+Ciao! Sono Giuseppe, un appassionato **Front-End Developer**. Il mio ecosistema naturale è il web, ma sono guidato da una forte curiosità e dalla continua voglia di imparare e mettermi in gioco.
 
-Il mio obiettivo con questo progetto è mostrare come sto applicando i concetti di UI/UX, gestione dei widget e architettura del codice per costruire soluzioni digitali che siano non solo belle da vedere, ma anche solide sotto il cofano.
+Questo portfolio nasce proprio come una **sfida personale ed un esperimento**: ho voluto immergermi nl mondo di **Flutter** (e del linguaggio Dart) per capire da vicino come funziona lo sviluppo cross-platform. Non sono un Mobile Developer, ma mi piace esplorare strumenti nuovi per arricchire il mio bagaglio tecnico.
 
-## 🎯 Cosa ho voluto dimostrare con questo progetto
+Come recita il mio motto: *"Codice che parla. Parola che connette."* Avendo un solido background nella comunicazione e nel public speaking, considero il codice e il design non solo come strumenti tecnici, ma come ponti per far dialogare in modo naturale l`utente finale con la tecnologia.
 
-- **Curiosità e Apprendimento**: L'integrazione di pacchetti come `flutter_animate` per dare un tocco di dinamismo.
-- **Attenzione al Dettaglio**: La gestione della responsività per far sì che il sito si legga bene ovunque.
-- **Mentalità DevOps**: Ho configurato una GitHub Action per automatizzare il rilascio online, imparando a gestire il ciclo di vita del software.
-- **Codice Pulito**: Organizzazione dei file in componenti separati (widgets, screens, utils) per rendere il progetto scalabile.
+## 🎯 Cosa ho voluto dimostrare con questo esperimento
 
-## ✨ Caratteristiche Tecniche
+- **Propensione all`apprendimento**: La capacità di adattarmi rapidamente a un nuovo framework (Flutter) e a un nuovo linguaggio (Dart).
+- **Attenzione a UI e Animazioni**: Lo studio integrato di librerie come `flutter_animate` per costruire interfacce dinamiche ed esteticamente piacevoli.
+- **Mentalità DevOps**: La configurazione in autonomia di GitHub Actions (CI/CD) per automatizzare il rilascio in cloud del progetto su GitHub Pages.
+- **Architettura Organizzata**: La suddivisione del codice in componenti separati (widgets, screens, utils) per simulare un progetto scalabile e di facile manutenzione.
 
-- **Layout Adattivo**: Navigazione ottimizzata per Mobile, Tablet e Desktop.
-- **Dark Mode**: Implementazione del supporto al tema scuro per migliorare l'accessibilità.
-- **Asset Management**: Gestione di immagini personalizzate e font moderni.
+## 🛠️ Tecnologie Sperimentate in questa Repo
 
-## 🛠️ Cosa ho utilizzato
-
-- **Framework**: Flutter & Dart
-- **Librerie**: `flutter_animate`, `google_fonts`, `url_launcher`
-- **Automation**: GitHub Actions per il Deploy continuo
-
-## 📁 Architettura della Repository
-
-- `lib/widgets/` - Dove ho "smontato" l'interfaccia in pezzi più piccoli e gestibili.
-- `lib/utils/responsive.dart` - Il cuore logico che decide come mostrare i contenuti in base allo schermo.
-- `lib/screens/` - Le pagine principali dell'app.
-
-## 🚀 Prossimi Passi (Roadmap)
-- [ ] Aggiungere una sezione "Contatti" con validazione dei campi.
-- [ ] Implementare una galleria di progetti dinamica.
-- [ ] Approfondire la gestione dello stato per rendere l'app ancora più reattiva.
-
----
-*Sto studiando ogni giorno per migliorare. Se vuoi scambiare due chiacchiere o darmi un feedback sul codice, contattami pure!*
-
-
-## ✨ Caratteristiche
-
-- **Design Responsivo**: Layout adattivo progettato per performare al meglio su schermi di ogni dimensione (Mobile, Tablet, Desktop) grazie al widget custom `Responsive`.
-- **Tema Dark & Light**: Supporto nativo per tema chiaro e tema scuro con switch dinamico in esecuzione.
-- **Animazioni Fluide**: Utilizzo intensivo del pacchetto `flutter_animate` per transizioni, fade-in ed interazioni morbide che arricchiscono la UX.
-- **Supporto multi-piattaforma**: Ideato primariamente per il Web, ma pienamente compatibile con Android, iOS, macOS, Windows e Linux in caso di build native.
-
-## 🛠️ Tecnologie Utilizzate
-
-- **Framework**: [Flutter](https://flutter.dev/) (Dart)
-- **Animazioni**: `flutter_animate` 
-- **Tipografia**: `google_fonts` (Outfit)
-- **Routing & Link esterni**: `url_launcher`
-
-## 📁 Struttura del Progetto
-
-Il progetto segue una separazione chiara e semplice dei componenti per mantenere il codice leggibile:
-
-- `lib/main.dart` - Entry point e configurazioni base dell'app.
-- `lib/theme/app_theme.dart` - Definizione puntuale del ThemeData per la Dark e Light Mode.
-- `lib/screens/home_page.dart` - Schermata principale che racchiude l'interfaccia a scorrimento verticale.
-- `lib/widgets/` - Contiene tutte le sezioni modulari e riutilizzabili.
-- `lib/utils/responsive.dart` - Utility per la gestione dinamica del viewport.
+- **Framework**: [Flutter Web](https://flutter.dev/) & Dart
+- **Librerie UI**: `flutter_animate`, `google_fonts` (Outfit), `url_launcher`
+- **Automation**: Github Actions per il Deploy continuo
 
 ## ⚙️ Installazione ed Esecuzione Locale
 
-Questa app è pronta all'uso. Segui questi passi per eseguirla localmente:
+Se desideri eseguire il progetto sul tuo computer per esplorare il codice:
 
 1. **Clona la Repository**:
    ```bash
@@ -81,21 +38,18 @@ Questa app è pronta all'uso. Segui questi passi per eseguirla localmente:
    flutter pub get
    ```
 
-3. **Esegui l'app (per il web)**:
+3. **Esegui l`app (compilata per il web)**:
    ```bash
    flutter run -d chrome
    ```
 
-## 📬 Obiettivi Futuri e Iterazioni
-- Integrazione dinamica form Contatti
-- Sezione Progetti interattiva con fetch dinamico dati da server o API.
-- Supporto i18n per Multilingua (IT/EN)
+## 🚀 Roadmap
+- [ ] Aggiungere dinamismo alla sezione "Progetti" collegandola a un formato JSON locale o API.
+- [ ] Continuare lo studio delle architetture Front-End tornando a focalizzarmi sulle mie tecnologie Web core.
 
 ---
-*Progettato e sviluppato con ❤️ in Flutter da [Giuseppe Randazzo](https://github.com/GiuseppeRandazzo).*
 
-Se vuoi fare due chiacchiere o collaborare ad un progetto, puoi trovarmi su:
-- [GitHub](https://github.com/GiuseppeRandazzo)
+Se vuoi scambiare due chiacchiere su web development, UX o codice, mi trovi qui:
+- [GitHub: @GiuseppeRandazzo](https://github.com/GiuseppeRandazzo)
 
----
-*Creato con 💙 e ☕ da Giuseppe Randazzo.*
+*Sviluppato con curiosità 💡 da Giuseppe Randazzo.*
