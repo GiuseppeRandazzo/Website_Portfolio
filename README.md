@@ -1,8 +1,8 @@
 ﻿# 🚀 Giuseppe Randazzo | Front-End Developer
 
-[![Flutter Web Deployment](https://github.com/GiuseppeRandazzo/pratico_portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/GiuseppeRandazzo/pratico_portfolio/actions)
+[![Flutter Web Deployment](https://github.com/GiuseppeRandazzo/Website_Portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/GiuseppeRandazzo/Website_Portfolio/actions)
 
-> **🌍 LIVE DEMO**: [Visita il mio Portfolio](https://GiuseppeRandazzo.github.io/pratico_portfolio/)
+> **🌍 LIVE DEMO**: [Visita il mio Portfolio](https://GiuseppeRandazzo.github.io/Website_Portfolio/)
 
 Ciao! Sono Giuseppe, un appassionato **Front-End Developer**. Il mio ecosistema naturale è il web, ma sono guidato da una forte curiosità e dalla continua voglia di imparare e mettermi in gioco.
 
@@ -29,8 +29,8 @@ Se desideri eseguire il progetto sul tuo computer per esplorare il codice:
 
 1. **Clona la Repository**:
    ```bash
-   git clone https://github.com/GiuseppeRandazzo/pratico_portfolio.git
-   cd pratico_portfolio
+   git clone https://github.com/GiuseppeRandazzo/Website_Portfolio.git
+   cd Website_Portfolio
    ```
 
 2. **Scarica le dipendenze**:
