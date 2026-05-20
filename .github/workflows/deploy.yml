@@ -26,7 +26,7 @@ jobs:
 
       - name: Build Web App
         # Il parametro base-href è fondamentale! Deve corrispondere esattamente al nome del tuo repository su GitHub
-        run: flutter build web --release --base-href "/pratico_portfolio/"
+        run: flutter build web --release --base-href "/Website_Portfolio/"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
