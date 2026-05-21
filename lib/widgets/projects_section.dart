@@ -20,11 +20,11 @@ class ProjectsSection extends StatelessWidget {
         'link': 'https://github.com/GiuseppeRandazzo/Il_teatro_nella_tua_citta',
       },
       {
-        'title': 'App Portfolio Personale',
+        'title': 'App Personal Portfolio',
         'description':
             'Applicazione web per la visualizzazione del portfolio personale.',
         'tags': ['HTML', 'CSS', 'JavaScript'],
-        'link': 'https://giusepperandazzo.github.io/App_Portofolio/',
+        'link': 'https://giusepperandazzo.github.io/App_personal_portofolio/',
       },
     ];
 
