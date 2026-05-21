@@ -65593,7 +65593,7 @@ A.TD.prototype={
 $0(){},
 $S:0}
 A.Ek.prototype={
-P(a){var s=null,r=A.bG(a,s,t.w).w.a.a<600,q=t.s,p=t.N,o=t.K,n=A.d([A.ao(["title","Il Teatro nella tua citt\xe0","description","Applicazione completa per lo shopping online con carrello, pagamenti e gestione ordini.","tags",A.d(["Angular"],q),"link","https://github.com/GiuseppeRandazzo/Il_teatro_nella_tua_citta"],p,o),A.ao(["title","App Portfolio Personale","description","Applicazione web per la visualizzazione del portfolio personale.","tags",A.d(["HTML","CSS","JavaScript"],q),"link","https://giusepperandazzo.github.io/App_Portofolio/"],p,o)],t.Mq)
+P(a){var s=null,r=A.bG(a,s,t.w).w.a.a<600,q=t.s,p=t.N,o=t.K,n=A.d([A.ao(["title","Il Teatro nella tua citt\xe0","description","Applicazione completa per lo shopping online con carrello, pagamenti e gestione ordini.","tags",A.d(["Angular"],q),"link","https://github.com/GiuseppeRandazzo/Il_teatro_nella_tua_citta"],p,o),A.ao(["title","App Personal Portfolio","description","Applicazione web per la visualizzazione del portfolio personale.","tags",A.d(["HTML","CSS","JavaScript"],q),"link","https://giusepperandazzo.github.io/App_personal_portofolio/"],p,o)],t.Mq)
 q=r?24:100
 return A.ji(A.rl(A.d([A.G2(A.lm(A.kU(A.iK("Progetti in Evidenza",A.fl(s,s,s,s,s,s,s,s,s,s,s,r?32:40,s,s,B.b5,s,s,!0,s,s,s,s,s,s,s,s),s)),s,s)),B.iV,A.iK("Alcuni dei miei lavori recenti di cui vado fiero.",A.fl(s,s,B.eK,s,s,s,s,s,s,s,s,18,s,s,s,s,s,!0,s,s,s,s,s,s,s,s),s),B.vO,A.aq_(new A.Zm(r,n))],t.E),B.aF,s,B.aI,B.aJ),s,s,s,s,new A.b8(q,80,q,80),s)}}
 A.Zm.prototype={
